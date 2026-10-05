@@ -2,12 +2,12 @@
   {
     "id": 1,
     "subject": "Physics",
-    "question": "Physics sample question 1. Select the correct option (answer is option D).",
+    "question": "Physics sample question 1. Univearsal Gravitational Constant(answer is option A).",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "6.673*10^-11",
+      "6.673*10^+11",
+      "6.673*11^-11",
+      "6.663*10^-11"
     ],
     "answer": "D"
   },
