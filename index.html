@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JEE Main Mock Test</title>
+<style>
+:root{--blue:#1b5e9e;--navy:#0f3a66;--ink:#222;--line:#cfd6de;--bg:#f2f4f7;
+--green:#3a9d23;--red:#d9381e;--purple:#6a3fa0;--grey:#e1e4e8;--orange:#e8890c}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--ink);background:var(--bg)}
+button{font:inherit;cursor:pointer}
+.hide{display:none!important}
+/* header */
+.top{background:#fff;border-bottom:4px solid var(--blue);display:flex;align-items:center;gap:12px;padding:8px 16px}
+.logo{width:46px;height:46px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px}
+.top h1{margin:0;font-size:18px;color:var(--navy)}
+.top small{color:#555}
+.top .sp{flex:1}
+/* login */
+.loginwrap{display:grid;grid-template-columns:1fr 380px;gap:24px;max-width:960px;margin:40px auto;padding:0 16px}
+.card{background:#fff;border:1px solid var(--line)}
+.card h2{margin:0;background:var(--blue);color:#fff;font-size:15px;padding:10px 14px}
+.card .in{padding:16px}
+.notice li{margin-bottom:8px}
+.field{margin-bottom:12px}
+.field label{display:block;font-weight:700;margin-bottom:4px}
+.field input{width:100%;padding:9px;border:1px solid #9aa5b1;font-size:14px}
+.btn{border:1px solid #999;background:#fff;padding:9px 16px;font-weight:700}
+.btn.blue{background:var(--blue);border-color:var(--navy);color:#fff}
+.btn.green{background:var(--green);border-color:#2b7a18;color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.err{color:var(--red);font-weight:700;margin:6px 0}
+/* instructions */
+.instr{max-width:960px;margin:16px auto;padding:0 16px}
+.instr .in{line-height:1.6}
+.instr ul{padding-left:20px}
+.legend span.sw{display:inline-block;vertical-align:middle;margin-right:6px}
+.foot{background:#fff;border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:center;margin-top:12px}
+/* exam */
+#exam{display:flex;flex-direction:column;height:100vh}
+.exbar{background:var(--navy);color:#fff;padding:6px 16px;display:flex;align-items:center;gap:16px}
+.exbar b{font-size:15px}
+.exbar .sp{flex:1}
+.timer{background:#fff;color:var(--navy);font:700 17px Consolas,monospace;padding:4px 12px;border-radius:3px}
+.timer.low{color:var(--red)}
+.main{flex:1;display:flex;min-height:0}
+.left{flex:1;display:flex;flex-direction:column;min-width:0;background:#fff;border-right:1px solid var(--line)}
+.tabs{display:flex;gap:4px;padding:8px 12px 0;border-bottom:2px solid var(--blue);background:#eaf1f8}
+.tab{border:1px solid var(--line);border-bottom:none;background:#fff;padding:7px 18px;font-weight:700;color:var(--navy)}
+.tab.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.qhead{display:flex;justify-content:space-between;padding:8px 14px;border-bottom:1px solid var(--line);font-weight:700}
+.qhead span:last-child{color:#555;font-weight:400}
+.qbody{flex:1;overflow:auto;padding:18px 20px}
+.qtext{font-size:16px;line-height:1.6;margin:0 0 18px;max-width:75ch}
+.opt{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);margin-bottom:8px;cursor:pointer;max-width:75ch}
+.opt:hover{background:#f6f9fc}
+.opt.sel{background:#e7f3e3;border-color:var(--green)}
+.actions{border-top:1px solid var(--line);background:#f7f8fa;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px}
+.actions .gap{flex:1}
+.right{width:310px;display:flex;flex-direction:column;background:#f7fbff}
+.cand{display:flex;gap:10px;align-items:center;padding:10px;background:#dfe9f3;border-bottom:1px solid var(--line)}
+.photo{width:54px;height:60px;background:#b8c4d0;display:grid;place-items:center;color:#fff;font-size:26px}
+.leg{padding:8px 10px;display:grid;grid-template-columns:1fr 1fr;gap:6px 8px;font-size:12px;border-bottom:1px solid var(--line);background:#fff}
+.leg div{display:flex;align-items:center;gap:6px}
+.pal-title{background:var(--blue);color:#fff;padding:6px 10px;font-weight:700}
+.pal{flex:1;overflow:auto;padding:10px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;align-content:start}
+.q{width:100%;height:36px;border:none;font-weight:700;color:#222;background:var(--grey);border-radius:4px;position:relative}
+.q.cur{outline:3px solid #f2b705;outline-offset:1px}
+.q.na{background:var(--red);color:#fff;border-radius:4px 4px 16px 16px}
+.q.an{background:var(--green);color:#fff;border-radius:16px 16px 4px 4px}
+.q.mk{background:var(--purple);color:#fff;border-radius:50%}
+.q.am{background:var(--purple);color:#fff;border-radius:50%}
+.q.am::after{content:"";position:absolute;right:2px;bottom:2px;width:9px;height:9px;border-radius:50%;background:var(--green);border:1px solid #fff}
+.sw{display:inline-block;width:24px;height:22px;line-height:22px;text-align:center;font-size:11px;font-weight:700;background:var(--grey);border-radius:4px;color:#222}
+.sw.na{background:var(--red);color:#fff;border-radius:4px 4px 12px 12px}
+.sw.an{background:var(--green);color:#fff;border-radius:12px 12px 4px 4px}
+.sw.mk{background:var(--purple);color:#fff;border-radius:50%}
+.sw.am{background:var(--purple);color:#fff;border-radius:50%;position:relative}
+.sw.am::after{content:"";position:absolute;right:0;bottom:0;width:8px;height:8px;border-radius:50%;background:var(--green);border:1px solid #fff}
+.subrow{padding:10px;border-top:1px solid var(--line);background:#fff;text-align:center}
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center;z-index:10}
+.modal .box{background:#fff;width:min(560px,94vw);border-top:5px solid var(--blue)}
+.modal .box>div{padding:16px}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:center}
+th{background:#eaf1f8}
+td:first-child{text-align:left;font-weight:700}
+.big{font-size:40px;font-weight:700;color:var(--navy);margin:6px 0}
+@media(max-width:820px){
+ .loginwrap{grid-template-columns:1fr}
+ .main{flex-direction:column;overflow:auto}
+ .right{width:100%}.pal{grid-template-columns:repeat(8,1fr)}
+}
+.qbody{-webkit-user-select:none;user-select:none}
+.vio{font-size:13px;background:#fff3cd;color:#7a5200;padding:3px 10px;border-radius:3px;font-weight:700}
+.vio.bad{background:#ffd6d0;color:#a01800}
+</style>
+</head>
+<body>
+
+<!-- ============ LOGIN ============ -->
+<section id="login">
+  <div class="top"><div class="logo">JEE</div><div><h1>JEE Main Mock Test</h1><small>Computer Based Test (CBT) Practice Portal</small></div></div>
+  <div class="loginwrap">
+    <div class="card"><h2>Important Notice</h2><div class="in"><ul class="notice">
+      <li>Use the Login ID and Password provided to you.</li>
+      <li>The test has 90 questions: 30 Physics, 30 Chemistry and 30 Mathematics.</li>
+      <li>Duration is 2 hours. The test is submitted automatically when time ends.</li>
+      <li><b>Do not switch tabs or windows.</b> Each switch is recorded. After 3 switches the test is submitted automatically.</li>
+      <li>Each correct answer carries +4 marks and each wrong answer −1.</li>
+    </ul></div></div>
+    <form class="card" id="loginForm"><h2>Candidate Login</h2><div class="in">
+      <div class="field"><label>Login ID</label><input id="uid" autocomplete="username" required></div>
+      <div class="field"><label>Password</label><input id="pwd" type="password" autocomplete="current-password" required></div>
+      <div class="err" id="loginErr" role="alert"></div>
+      <button class="btn blue" style="width:100%">Login</button>
+    </div></form>
+  </div>
+</section>
+
+<!-- ============ INSTRUCTIONS ============ -->
+<section id="instr" class="hide">
+  <div class="top"><div class="logo">JEE</div><div><h1>JEE Main Mock Test</h1><small>General Instructions</small></div><div class="sp"></div><b id="whoI"></b></div>
+  <div class="instr"><div class="card"><h2>Please read the instructions carefully</h2><div class="in">
+    <p><b>General instructions</b></p>
+    <ul>
+      <li>Total duration of the examination is <b>120 minutes</b>. The countdown timer at the top right shows the time left. When it reaches zero, the exam ends and is submitted automatically.</li>
+      <li>The question palette on the right shows the status of each question using these symbols:</li>
+    </ul>
+    <div class="legend" style="line-height:2.3;margin-left:20px">
+      <div><span class="sw">1</span> You have not visited the question yet.</div>
+      <div><span class="sw na">3</span> You have not answered the question.</div>
+      <div><span class="sw an">5</span> You have answered the question.</div>
+      <div><span class="sw mk">7</span> You have not answered the question, but have marked it for review.</div>
+      <div><span class="sw am">9</span> You have answered the question and marked it for review. It will be evaluated.</div>
+    </div>
+    <ul>
+      <li>Choose one option per question. To change an answer, select another option or click <b>Clear Response</b>.</li>
+      <li>Click <b>Save &amp; Next</b> to save your answer and move on. Answers are counted only when saved.</li>
+      <li>Marking: <b>+4</b> for a correct answer, <b>−1</b> for a wrong answer, <b>0</b> if unattempted or only marked for review.</li>
+      <li>Switch between Physics, Chemistry and Mathematics using the tabs at the top.</li>
+      <li><b>Cheating rule:</b> leaving the exam tab or window is recorded. Warnings are shown, and after 3 switches your test is submitted automatically and flagged. Copy, paste and right-click are disabled.</li>
+      <li>After submission your marks are saved and you are logged out automatically.</li>
+    </ul>
+    <label><input type="checkbox" id="agree"> I have read and understood the instructions. I agree to follow them.</label>
+  </div>
+  <div class="foot"><span class="err" id="instrErr"></span><button class="btn green" id="startBtn" disabled>I am ready to begin</button></div></div></div>
+</section>
+
+<!-- ============ EXAM ============ -->
+<section id="exam" class="hide">
+  <div class="exbar"><b>JEE Main Mock Test</b><span class="sp"></span><span class="vio" id="vio">Tab switches: 0/3</span><span>Time Left:</span><span class="timer" id="timer">02:00:00</span></div>
+  <div class="main">
+    <div class="left">
+      <div class="tabs" id="tabs"></div>
+      <div class="qhead"><span id="qno"></span><span id="qmarks">Marks: +4 / −1</span></div>
+      <div class="qbody"><p class="qtext" id="qtext"></p><div id="opts"></div></div>
+      <div class="actions">
+        <button class="btn green" id="bSaveNext">Save &amp; Next</button>
+        <button class="btn" id="bClear">Clear Response</button>
+        <button class="btn" style="background:var(--orange);color:#fff;border-color:#b86d05" id="bSaveMark">Save &amp; Mark for Review</button>
+        <button class="btn" style="background:var(--purple);color:#fff;border-color:#4d2c78" id="bMark">Mark for Review &amp; Next</button>
+        <span class="gap"></span>
+        <button class="btn" id="bPrev">&lt;&lt; Back</button>
+        <button class="btn" id="bNext">Next &gt;&gt;</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="cand"><div class="photo">&#128100;</div><b id="whoE"></b></div>
+      <div class="leg">
+        <div><span class="sw" id="cNV">0</span> Not Visited</div>
+        <div><span class="sw na" id="cNA">0</span> Not Answered</div>
+        <div><span class="sw an" id="cAN">0</span> Answered</div>
+        <div><span class="sw mk" id="cMK">0</span> Marked for Review</div>
+        <div style="grid-column:1/3"><span class="sw am" id="cAM">0</span> Answered &amp; Marked for Review</div>
+      </div>
+      <div class="pal-title" id="palTitle">Physics</div>
+      <div class="pal" id="pal"></div>
+      <div class="subrow"><button class="btn blue" id="bSubmit" style="width:100%">Submit</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULT ============ -->
+<section id="result" class="hide">
+  <div class="top"><div class="logo">JEE</div><div><h1>JEE Main Mock Test</h1><small>Test Submitted</small></div></div>
+  <div class="instr"><div class="card"><h2>Your test has been submitted successfully</h2><div class="in" style="text-align:center">
+    <p id="autoNote" class="err"></p>
+    <div class="big"><span id="rTotal"></span> <small style="font-size:18px;color:#555">/ <span id="rMax">360</span></small></div>
+    <table><thead><tr><th>Subject</th><th>Correct</th><th>Wrong</th><th>Unattempted</th><th>Marks</th></tr></thead><tbody id="rBody"></tbody></table>
+    <p>Your marks have been saved. You will be logged out in <b id="outSec">15</b> seconds.</p>
+    <button class="btn blue" id="logoutNow">Logout now</button>
+  </div></div></div>
+</section>
+
+<!-- ============ SUBMIT MODAL ============ -->
+<div class="modal hide" id="modal"><div class="box"><div>
+  <h3 style="margin:0 0 10px;color:var(--navy)">Exam Summary</h3>
+  <table><thead><tr><th>Section</th><th>Questions</th><th>Answered</th><th>Not Answered</th><th>Marked</th><th>Not Visited</th></tr></thead><tbody id="sumBody"></tbody></table>
+  <p id="sumMsg" style="font-weight:700">Are you sure you want to submit this test? You cannot change your answers afterwards.</p>
+  <div style="display:flex;gap:10px;justify-content:center">
+    <button class="btn green" id="yesSubmit">Yes, submit</button>
+    <button class="btn" id="noSubmit">No, go back</button>
+  </div>
+</div></div></div>
+
+<div class="modal hide" id="warn"><div class="box" style="border-top-color:#d9381e"><div style="text-align:center">
+  <h3 style="margin:0 0 8px;color:#d9381e">Warning: Tab / window change detected</h3>
+  <p id="warnText"></p><button class="btn blue" id="warnOk">I understand, continue test</button>
+</div></div></div>
+
+<div class="modal hide" id="busy"><div class="box"><div style="text-align:center"><b id="busyMsg">Submitting your test…</b></div></div></div>
+
+<script>
+const SUBJECTS = ["Physics","Chemistry","Mathematics"];
+const $ = id => document.getElementById(id);
+const ss = { get:k=>{try{return sessionStorage.getItem(k)}catch(e){return null}}, set:(k,v)=>{try{sessionStorage.setItem(k,v)}catch(e){}}, del:k=>{try{sessionStorage.removeItem(k)}catch(e){}} };
+
+let TOKEN="", NAME="", UID="", QUESTIONS=[], endTs=0, S=null, tick=null, outTimer=null, submitted=false, viol=0, maxV=3, watching=false, lastV=0;
+
+/* ---------- API helper (talks to Node + MySQL) ---------- */
+async function api(path, body){
+  const res = await fetch("/api"+path,{method:"POST",
+    headers:{"Content-Type":"application/json",...(TOKEN&&{Authorization:"Bearer "+TOKEN})},
+    body:JSON.stringify(body||{})});
+  const d = await res.json().catch(()=>({}));
+  if(!res.ok) throw Object.assign(new Error(d.error||"Server error"),{status:res.status});
+  return d;
+}
+function show(id){ ["login","instr","exam","result"].forEach(x=>$(x).classList.toggle("hide",x!==id)); }
+const save = ()=>ss.set("jee_s_"+UID,JSON.stringify(S));
+const countOf = s => QUESTIONS.filter(q=>q.subject===s).length;
+
+/* ---------- LOGIN (MySQL users table) ---------- */
+$("loginForm").onsubmit = async e=>{
+  e.preventDefault(); $("loginErr").textContent="";
+  try{
+    const d = await api("/login",{loginId:$("uid").value.trim(),password:$("pwd").value});
+    if(d.alreadySubmitted){ $("loginErr").textContent="You have already submitted this test."; return; }
+    TOKEN=d.token; NAME=d.name; UID=$("uid").value.trim();
+    $("whoI").textContent=NAME;
+    if(d.inProgress) beginExam(); else show("instr");
+  }catch(ex){ $("loginErr").textContent=ex.message; }
+};
+$("agree").onchange = e=>$("startBtn").disabled=!e.target.checked;
+$("startBtn").onclick = beginExam;
+
+/* ---------- LOAD QUESTIONS + REMAINING TIME FROM SERVER ---------- */
+async function beginExam(){
+  $("instrErr").textContent="";
+  try{
+    const d = await api("/start");
+    QUESTIONS = d.questions;
+    endTs = Date.now()+d.secondsLeft*1000; viol=d.violations||0; maxV=d.maxViolations||3;
+    let saved=null; try{ saved=JSON.parse(ss.get("jee_s_"+UID)); }catch(e){}
+    S = saved || {ans:{},marked:{},visited:{},cur:0};
+    startExam();
+  }catch(ex){
+    if(show("instr"), ex.status===403){ alert(ex.message); logout(); }
+    else $("instrErr").textContent=ex.message;
+  }
+}
+
+/* ---------- EXAM ---------- */
+function startExam(){
+  show("exam"); $("whoE").textContent=NAME;
+  $("tabs").innerHTML=SUBJECTS.map(s=>`<button class="tab" data-s="${s}">${s}</button>`).join("");
+  $("tabs").onclick=e=>{ const s=e.target.dataset.s; if(s) go(QUESTIONS.findIndex(q=>q.subject===s)); };
+  go(S.cur||0);
+  clearInterval(tick); tick=setInterval(updateTimer,1000); updateTimer(); watching=true; updateVio();
+}
+function updateTimer(){
+  const left=Math.max(0,endTs-Date.now()), sec=Math.ceil(left/1000);
+  $("timer").textContent=[Math.floor(sec/3600),Math.floor(sec%3600/60),sec%60].map(n=>String(n).padStart(2,"0")).join(":");
+  $("timer").classList.toggle("low",sec<600);
+  if(left<=0) finish(true);
+}
+function status(i){
+  const a=S.ans[i]!==undefined, m=!!S.marked[i], v=!!S.visited[i];
+  if(a&&m) return "am"; if(m) return "mk"; if(a) return "an"; if(v) return "na"; return "";
+}
+function go(i){ i=Math.max(0,Math.min(QUESTIONS.length-1,i)); S.cur=i; S.visited[i]=true; render(); }
+function render(){
+  const i=S.cur, q=QUESTIONS[i], first=QUESTIONS.findIndex(x=>x.subject===q.subject);
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.s===q.subject));
+  $("qno").textContent=`Question No. ${i-first+1}`;
+  $("qtext").textContent=q.text;
+  $("opts").innerHTML=q.options.map((o,k)=>`<label class="opt ${S.ans[i]===k?"sel":""}"><input type="radio" name="o" value="${k}" ${S.ans[i]===k?"checked":""}> ${"ABCD"[k]}. </label>`).join("");
+  $("opts").querySelectorAll("label").forEach((l,k)=>l.appendChild(document.createTextNode(q.options[k])));
+  $("opts").querySelectorAll("input").forEach(r=>r.onchange=()=>{ S.ans[i]=+r.value; render(); });
+  $("palTitle").textContent=q.subject;
+  $("pal").innerHTML=QUESTIONS.map((x,k)=>x.subject===q.subject?`<button class="q ${status(k)} ${k===i?"cur":""}" data-k="${k}">${k-first+1}</button>`:"").join("");
+  $("pal").onclick=e=>{ if(e.target.dataset.k!==undefined) go(+e.target.dataset.k); };
+  const c={nv:0,na:0,an:0,mk:0,am:0};
+  QUESTIONS.forEach((x,k)=>{ if(x.subject!==q.subject) return; const s=status(k); c[s===""?"nv":s]++; });
+  $("cNV").textContent=c.nv;$("cNA").textContent=c.na;$("cAN").textContent=c.an;$("cMK").textContent=c.mk;$("cAM").textContent=c.am;
+  save();
+}
+$("bSaveNext").onclick=()=>{ delete S.marked[S.cur]; go(S.cur+1); };
+$("bClear").onclick=()=>{ delete S.ans[S.cur]; render(); };
+$("bSaveMark").onclick=()=>{ S.marked[S.cur]=true; go(S.cur+1); };
+$("bMark").onclick=()=>{ S.marked[S.cur]=true; go(S.cur+1); };
+$("bPrev").onclick=()=>go(S.cur-1);
+$("bNext").onclick=()=>go(S.cur+1);
+
+/* ---------- SUBMIT (marks calculated + saved in MySQL by the server) ---------- */
+$("bSubmit").onclick=()=>{
+  $("sumBody").innerHTML=SUBJECTS.map(s=>{
+    const c={nv:0,na:0,an:0,mk:0,am:0};
+    QUESTIONS.forEach((x,k)=>{ if(x.subject===s){ const t=status(k); c[t===""?"nv":t]++; }});
+    return `<tr><td>${s}</td><td>${countOf(s)}</td><td>${c.an+c.am}</td><td>${c.na}</td><td>${c.mk+c.am}</td><td>${c.nv}</td></tr>`;
+  }).join("");
+  $("modal").classList.remove("hide");
+};
+$("noSubmit").onclick=()=>$("modal").classList.add("hide");
+$("yesSubmit").onclick=()=>finish(false);
+
+async function finish(auto){
+  if(submitted) return; submitted=true; watching=false; clearInterval(tick);
+  $("modal").classList.add("hide"); $("busy").classList.remove("hide");
+  const ans={}; QUESTIONS.forEach((q,k)=>{ if(S.ans[k]!==undefined) ans[q.id]="ABCD"[S.ans[k]]; });
+  let r=null;
+  while(!r){
+    try{ r=await api("/submit",{answers:ans}); }
+    catch(e){
+      if(e.status===401||e.status===403){ $("busy").classList.add("hide"); alert(e.message); logout(); return; }
+      $("busyMsg").textContent="Cannot reach the server. Retrying… do not close this page.";
+      await new Promise(x=>setTimeout(x,3000));
+    }
+  }
+  $("busy").classList.add("hide");
+  $("rTotal").textContent=r.total;
+  $("rMax").textContent=r.max;
+  $("autoNote").textContent=r.terminated?`Your test was submitted automatically because you left the exam window ${r.tabSwitches} times.`:(auto?"Time is over. Your test was submitted automatically.":"");
+  $("rBody").innerHTML=SUBJECTS.map(s=>{const x=r.subjects[s];return `<tr><td>${s}</td><td>${x.c}</td><td>${x.w}</td><td>${x.u}</td><td>${x.m}</td></tr>`}).join("");
+  show("result");
+  let n=15; $("outSec").textContent=n;
+  outTimer=setInterval(()=>{ $("outSec").textContent=--n; if(n<=0) logout(); },1000);
+}
+
+/* ---------- AUTOMATIC LOGOUT ---------- */
+function logout(){
+  clearInterval(outTimer); clearInterval(tick);
+  watching=false; viol=0; $("warn").classList.add("hide"); ss.del("jee_s_"+UID); TOKEN=""; NAME=""; UID=""; S=null; QUESTIONS=[]; submitted=false;
+  $("uid").value=""; $("pwd").value=""; $("agree").checked=false; $("startBtn").disabled=true;
+  $("loginErr").textContent=""; show("login");
+}
+$("logoutNow").onclick=logout;
+/* ---------- CHEAT DETECTION: tab / window switch ---------- */
+function updateVio(){ $("vio").textContent=`Tab switches: ${viol}/${maxV}`; $("vio").classList.toggle("bad",viol>0); }
+async function violation(reason){
+  if(!watching||submitted) return;
+  const now=Date.now(); if(now-lastV<1500) return;   // one tab switch fires several events; count it once
+  lastV=now; viol++; updateVio();
+  let terminate=viol>=maxV;
+  try{ const r=await api("/violation",{reason}); viol=r.count; maxV=r.max; terminate=r.terminate; updateVio(); }catch(e){}
+  if(terminate){ finish(true); return; }
+  $("warnText").textContent=`Warning ${viol} of ${maxV}. If you leave the exam window ${maxV-viol} more time(s), your test will be submitted automatically.`;
+  $("warn").classList.remove("hide");
+}
+$("warnOk").onclick=()=>$("warn").classList.add("hide");
+document.addEventListener("visibilitychange",()=>{ if(document.hidden) violation("tab"); });
+window.addEventListener("blur",()=>setTimeout(()=>{ if(!document.hasFocus()) violation("window"); },300));
+["copy","cut","paste","contextmenu","selectstart","dragstart"].forEach(ev=>document.addEventListener(ev,e=>{ if(watching) e.preventDefault(); }));
+document.addEventListener("keydown",e=>{
+  if(!watching) return;
+  const k=e.key.toLowerCase();
+  if(((e.ctrlKey||e.metaKey)&&["c","v","x","a","p","s","u"].includes(k))||e.key==="F12") e.preventDefault();
+});
+
+window.addEventListener("beforeunload",e=>{ if(!$("exam").classList.contains("hide")){ e.preventDefault(); e.returnValue=""; }});
+</script>
+</body>
+</html>

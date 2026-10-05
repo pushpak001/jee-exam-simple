@@ -1,0 +1,80 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:          # lets you run it manually from the Actions tab
+
+concurrency:
+  group: deploy-production    # never run two deployments at the same time
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - name: Syntax check
+        run: |
+          node --check server.js
+          node --check db.js
+          node --check add-user.js
+      - name: Validate questions.json
+        run: node deploy/check-questions.mjs
+
+  deploy:
+    name: Deploy
+    needs: check
+    runs-on: ubuntu-latest
+    env:
+      HOST: ${{ secrets.EC2_HOST }}
+      USER: ${{ secrets.EC2_USER }}
+      PORT: ${{ secrets.EC2_PORT || '22' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare SSH
+        env:
+          SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts
+
+      - name: Copy files to EC2
+        run: |
+          SSH="ssh -i ~/.ssh/deploy_key -p $PORT"
+          $SSH "$USER@$HOST" "mkdir -p ~/jee-exam-simple"
+          rsync -az --delete -e "$SSH" \
+            --exclude '.git' --exclude '.github' \
+            --exclude 'node_modules' --exclude '.env' --exclude 'sessions.json' \
+            ./ "$USER@$HOST:~/jee-exam-simple/"
+
+      - name: Install dependencies and restart app
+        run: |
+          ssh -i ~/.ssh/deploy_key -p "$PORT" "$USER@$HOST" <<'REMOTE'
+            set -e
+            cd ~/jee-exam-simple
+            test -f .env || { echo "ERROR: ~/jee-exam-simple/.env is missing on the server"; exit 1; }
+            npm install --omit=dev
+            pm2 startOrReload ecosystem.config.cjs --update-env
+            pm2 save
+          REMOTE
+
+      - name: Health check
+        run: |
+          ssh -i ~/.ssh/deploy_key -p "$PORT" "$USER@$HOST" <<'REMOTE'
+            for i in $(seq 1 15); do
+              if curl -fsS http://127.0.0.1:5000/health >/dev/null; then echo "App is healthy"; exit 0; fi
+              sleep 2
+            done
+            echo "App did not start. Last logs:"
+            pm2 logs jee-exam --lines 40 --nostream || true
+            exit 1
+          REMOTE
