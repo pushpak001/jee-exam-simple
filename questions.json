@@ -2,1081 +2,1081 @@
   {
     "id": 1,
     "subject": "Physics",
-    "question": "Physics sample question 1. Univearsal Gravitational Constant(answer is option A).",
+    "question": "The dimensional formula of Planck's constant is:",
     "options": [
-      "6.673*10^-11",
-      "6.673*10^+11",
-      "6.673*11^-11",
-      "6.663*10^-11"
+      "[M L^2 T^-1]",
+      "[M L T^-1]",
+      "[M L^2 T^-2]",
+      "[M L^-1 T^-1]"
     ],
     "answer": "A"
   },
   {
     "id": 2,
     "subject": "Physics",
-    "question": "Physics sample question 2. Select the correct option (answer is option C).",
+    "question": "A ball is thrown vertically upward with a speed of 20 m/s. Taking g = 10 m/s^2, the maximum height reached is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 3,
-    "subject": "Physics",
-    "question": "Physics sample question 3. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 4,
-    "subject": "Physics",
-    "question": "Physics sample question 4. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "20 m",
+      "10 m",
+      "40 m",
+      "5 m"
     ],
     "answer": "A"
   },
   {
-    "id": 5,
+    "id": 3,
     "subject": "Physics",
-    "question": "Physics sample question 5. Select the correct option (answer is option D).",
+    "question": "The SI unit of magnetic flux is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 6,
-    "subject": "Physics",
-    "question": "Physics sample question 6. Select the correct option (answer is option C).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Tesla",
+      "Henry",
+      "Weber",
+      "Gauss"
     ],
     "answer": "C"
   },
   {
+    "id": 4,
+    "subject": "Physics",
+    "question": "Two resistors of 4 Ω and 12 Ω are connected in parallel. The equivalent resistance is:",
+    "options": [
+      "16 Ω",
+      "8 Ω",
+      "3 Ω",
+      "6 Ω"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "subject": "Physics",
+    "question": "The speed of light in a medium of refractive index 1.5 is (c = 3 × 10^8 m/s):",
+    "options": [
+      "3 × 10^8 m/s",
+      "4.5 × 10^8 m/s",
+      "2 × 10^8 m/s",
+      "1.5 × 10^8 m/s"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "subject": "Physics",
+    "question": "The kinetic energy of a 2 kg body moving with a speed of 3 m/s is:",
+    "options": [
+      "6 J",
+      "9 J",
+      "12 J",
+      "18 J"
+    ],
+    "answer": "B"
+  },
+  {
     "id": 7,
     "subject": "Physics",
-    "question": "Physics sample question 7. Select the correct option (answer is option B).",
+    "question": "The escape velocity from the surface of the Earth is approximately:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "7.9 km/s",
+      "11.2 km/s",
+      "9.8 km/s",
+      "15.0 km/s"
     ],
     "answer": "B"
   },
   {
     "id": 8,
     "subject": "Physics",
-    "question": "Physics sample question 8. Select the correct option (answer is option A).",
+    "question": "The efficiency of a Carnot engine working between 600 K and 300 K is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "25%",
+      "40%",
+      "75%",
+      "50%"
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 9,
     "subject": "Physics",
-    "question": "Physics sample question 9. Select the correct option (answer is option D).",
+    "question": "The time period of a simple pendulum of length 1 m at a place where g = π^2 m/s^2 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "2 s",
+      "1 s",
+      "4 s",
+      "π s"
     ],
-    "answer": "D"
+    "answer": "A"
   },
   {
     "id": 10,
     "subject": "Physics",
-    "question": "Physics sample question 10. Select the correct option (answer is option C).",
+    "question": "If the distance between the plates of a parallel plate capacitor is doubled, its capacitance:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Becomes half",
+      "Doubles",
+      "Remains the same",
+      "Becomes four times"
     ],
-    "answer": "C"
+    "answer": "A"
   },
   {
     "id": 11,
     "subject": "Physics",
-    "question": "Physics sample question 11. Select the correct option (answer is option B).",
+    "question": "If the momentum of a particle is doubled, its de Broglie wavelength:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 12,
-    "subject": "Physics",
-    "question": "Physics sample question 12. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 13,
-    "subject": "Physics",
-    "question": "Physics sample question 13. Select the correct option (answer is option D).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Doubles",
+      "Remains the same",
+      "Becomes one-fourth",
+      "Becomes half"
     ],
     "answer": "D"
   },
   {
-    "id": 14,
+    "id": 12,
     "subject": "Physics",
-    "question": "Physics sample question 14. Select the correct option (answer is option C).",
+    "question": "The maximum kinetic energy of photoelectrons in the photoelectric effect depends on:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 15,
-    "subject": "Physics",
-    "question": "Physics sample question 15. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Intensity of the incident light",
+      "Frequency of the incident light",
+      "Time of exposure to light",
+      "Area of the metal surface"
     ],
     "answer": "B"
   },
   {
-    "id": 16,
+    "id": 13,
     "subject": "Physics",
-    "question": "Physics sample question 16. Select the correct option (answer is option A).",
+    "question": "The power of a convex lens of focal length 50 cm is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "+0.5 D",
+      "+2 D",
+      "+5 D",
+      "-2 D"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "Physics",
+    "question": "If the distance between two point charges is doubled, the electrostatic force between them:",
+    "options": [
+      "Becomes one-fourth",
+      "Becomes half",
+      "Doubles",
+      "Becomes four times"
     ],
     "answer": "A"
   },
   {
+    "id": 15,
+    "subject": "Physics",
+    "question": "For a given speed of projection, the horizontal range of a projectile is maximum when the angle of projection is:",
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "90°"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "subject": "Physics",
+    "question": "The work done by the centripetal force on a particle in uniform circular motion is:",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Equal to mv^2"
+    ],
+    "answer": "C"
+  },
+  {
     "id": 17,
     "subject": "Physics",
-    "question": "Physics sample question 17. Select the correct option (answer is option D).",
+    "question": "The current through a 10 Ω resistor connected across a 5 V battery is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "2 A",
+      "5 A",
+      "50 A",
+      "0.5 A"
     ],
     "answer": "D"
   },
   {
     "id": 18,
     "subject": "Physics",
-    "question": "Physics sample question 18. Select the correct option (answer is option C).",
+    "question": "Which of the following electromagnetic waves has the highest frequency?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 19,
-    "subject": "Physics",
-    "question": "Physics sample question 19. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "X-rays",
+      "Gamma rays",
+      "Ultraviolet rays",
+      "Microwaves"
     ],
     "answer": "B"
   },
   {
+    "id": 19,
+    "subject": "Physics",
+    "question": "The momentum of a 0.5 kg body moving with a velocity of 4 m/s is:",
+    "options": [
+      "0.5 kg m/s",
+      "4 kg m/s",
+      "2 kg m/s",
+      "8 kg m/s"
+    ],
+    "answer": "C"
+  },
+  {
     "id": 20,
     "subject": "Physics",
-    "question": "Physics sample question 20. Select the correct option (answer is option A).",
+    "question": "At a height equal to the radius of the Earth above its surface, the acceleration due to gravity is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "g/2",
+      "g/4",
+      "g/9",
+      "g"
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 21,
     "subject": "Physics",
-    "question": "Physics sample question 21. Select the correct option (answer is option D).",
+    "question": "Sound waves in air are:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Transverse waves",
+      "Longitudinal waves",
+      "Electromagnetic waves",
+      "Both longitudinal and transverse"
     ],
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 22,
     "subject": "Physics",
-    "question": "Physics sample question 22. Select the correct option (answer is option C).",
+    "question": "In an isothermal process for an ideal gas:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Pressure remains constant",
+      "Volume remains constant",
+      "Temperature remains constant",
+      "No heat is exchanged with the surroundings"
     ],
     "answer": "C"
   },
   {
     "id": 23,
     "subject": "Physics",
-    "question": "Physics sample question 23. Select the correct option (answer is option B).",
+    "question": "Two capacitors of 6 μF each are connected in series. The equivalent capacitance is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 24,
-    "subject": "Physics",
-    "question": "Physics sample question 24. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 25,
-    "subject": "Physics",
-    "question": "Physics sample question 25. Select the correct option (answer is option D).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "12 μF",
+      "6 μF",
+      "1.5 μF",
+      "3 μF"
     ],
     "answer": "D"
   },
   {
-    "id": 26,
+    "id": 24,
     "subject": "Physics",
-    "question": "Physics sample question 26. Select the correct option (answer is option C).",
+    "question": "A 100 W bulb is used for 10 hours. The energy consumed is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "10 kWh",
+      "0.1 kWh",
+      "100 kWh",
+      "1 kWh"
     ],
-    "answer": "C"
+    "answer": "D"
   },
   {
-    "id": 27,
+    "id": 25,
     "subject": "Physics",
-    "question": "Physics sample question 27. Select the correct option (answer is option B).",
+    "question": "If the current through a long solenoid is doubled, the magnetic field inside it:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Becomes half",
+      "Doubles",
+      "Remains the same",
+      "Becomes four times"
     ],
     "answer": "B"
   },
   {
+    "id": 26,
+    "subject": "Physics",
+    "question": "A radioactive sample initially has 80 g of a substance. The mass remaining after 3 half-lives is:",
+    "options": [
+      "10 g",
+      "20 g",
+      "40 g",
+      "26.7 g"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "subject": "Physics",
+    "question": "The angular momentum of a system is conserved when the net external ______ on it is zero.",
+    "options": [
+      "Force",
+      "Energy",
+      "Pressure",
+      "Torque"
+    ],
+    "answer": "D"
+  },
+  {
     "id": 28,
     "subject": "Physics",
-    "question": "Physics sample question 28. Select the correct option (answer is option A).",
+    "question": "In Young's double slit experiment, if the distance between the slits and the screen is doubled, the fringe width:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Doubles",
+      "Becomes half",
+      "Remains the same",
+      "Becomes four times"
     ],
     "answer": "A"
   },
   {
     "id": 29,
     "subject": "Physics",
-    "question": "Physics sample question 29. Select the correct option (answer is option D).",
+    "question": "The energy of the electron in the n = 2 orbit of a hydrogen atom is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 30,
-    "subject": "Physics",
-    "question": "Physics sample question 30. Select the correct option (answer is option C).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "-13.6 eV",
+      "-1.51 eV",
+      "-3.4 eV",
+      "-0.85 eV"
     ],
     "answer": "C"
   },
   {
+    "id": 30,
+    "subject": "Physics",
+    "question": "Which of the following is a scalar quantity?",
+    "options": [
+      "Force",
+      "Velocity",
+      "Torque",
+      "Work"
+    ],
+    "answer": "D"
+  },
+  {
     "id": 31,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 1. Select the correct option (answer is option C).",
+    "question": "The number of electrons in an Fe^3+ ion (atomic number of Fe = 26) is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "26",
+      "24",
+      "23",
+      "29"
     ],
     "answer": "C"
   },
   {
     "id": 32,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 2. Select the correct option (answer is option B).",
+    "question": "The hybridization of carbon in methane (CH4) is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "sp",
+      "sp^2",
+      "sp^3",
+      "sp^3d"
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 33,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 3. Select the correct option (answer is option A).",
+    "question": "The pH of a 0.01 M HCl solution is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1",
+      "2",
+      "12",
+      "7"
     ],
-    "answer": "A"
+    "answer": "B"
   },
   {
     "id": 34,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 4. Select the correct option (answer is option D).",
+    "question": "The molar mass of H2SO4 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "96 g/mol",
+      "98 g/mol",
+      "100 g/mol",
+      "80 g/mol"
     ],
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 35,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 5. Select the correct option (answer is option C).",
+    "question": "The shape of the NH3 molecule is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Trigonal planar",
+      "Tetrahedral",
+      "Trigonal pyramidal",
+      "Linear"
     ],
     "answer": "C"
   },
   {
     "id": 36,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 6. Select the correct option (answer is option B).",
+    "question": "Which of the following elements has the highest electronegativity?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 37,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 7. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 38,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 8. Select the correct option (answer is option D).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Chlorine",
+      "Oxygen",
+      "Nitrogen",
+      "Fluorine"
     ],
     "answer": "D"
   },
   {
-    "id": 39,
+    "id": 37,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 9. Select the correct option (answer is option C).",
+    "question": "The oxidation state of manganese in KMnO4 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 40,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 10. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "+6",
+      "+7",
+      "+4",
+      "+2"
     ],
     "answer": "B"
   },
   {
-    "id": 41,
+    "id": 38,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 11. Select the correct option (answer is option A).",
+    "question": "The IUPAC name of CH3CH2OH is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Methanol",
+      "Ethanol",
+      "Ethanal",
+      "Propanol"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "subject": "Chemistry",
+    "question": "The value of Avogadro's number is:",
+    "options": [
+      "6.022 × 10^23 mol^-1",
+      "6.022 × 10^22 mol^-1",
+      "6.022 × 10^24 mol^-1",
+      "6.626 × 10^23 mol^-1"
     ],
     "answer": "A"
   },
   {
+    "id": 40,
+    "subject": "Chemistry",
+    "question": "The number of unpaired electrons in a chromium atom (Z = 24) in its ground state is:",
+    "options": [
+      "6",
+      "4",
+      "5",
+      "2"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 41,
+    "subject": "Chemistry",
+    "question": "For the exothermic reaction N2 + 3H2 ⇌ 2NH3, increasing the pressure favours:",
+    "options": [
+      "Decomposition of NH3",
+      "No change in equilibrium",
+      "Formation of N2 only",
+      "Formation of NH3"
+    ],
+    "answer": "D"
+  },
+  {
     "id": 42,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 12. Select the correct option (answer is option D).",
+    "question": "The unit of the rate constant for a first-order reaction is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "mol L^-1 s^-1",
+      "L mol^-1 s^-1",
+      "mol L^-1",
+      "s^-1"
     ],
     "answer": "D"
   },
   {
     "id": 43,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 13. Select the correct option (answer is option C).",
+    "question": "The bond order of the O2 molecule is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1",
+      "3",
+      "2",
+      "2.5"
     ],
     "answer": "C"
   },
   {
     "id": 44,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 14. Select the correct option (answer is option B).",
+    "question": "The functional group present in aldehydes is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "-COOH",
+      "-OH",
+      "-NH2",
+      "-CHO"
     ],
-    "answer": "B"
+    "answer": "D"
   },
   {
     "id": 45,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 15. Select the correct option (answer is option A).",
+    "question": "Which of the following is the strongest acid in aqueous solution?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "HF",
+      "HCl",
+      "HBr",
+      "HI"
     ],
-    "answer": "A"
+    "answer": "D"
   },
   {
     "id": 46,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 16. Select the correct option (answer is option D).",
+    "question": "The molarity of a solution containing 4 g of NaOH (molar mass 40 g/mol) in 500 mL of solution is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 47,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 17. Select the correct option (answer is option C).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 48,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 18. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 49,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 19. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0.2 M",
+      "0.1 M",
+      "0.4 M",
+      "2 M"
     ],
     "answer": "A"
   },
   {
+    "id": 47,
+    "subject": "Chemistry",
+    "question": "Which quantum number determines the shape of an orbital?",
+    "options": [
+      "Principal quantum number",
+      "Azimuthal quantum number",
+      "Magnetic quantum number",
+      "Spin quantum number"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "subject": "Chemistry",
+    "question": "The law stating that at constant temperature the pressure of a gas is inversely proportional to its volume is:",
+    "options": [
+      "Charles's law",
+      "Gay-Lussac's law",
+      "Boyle's law",
+      "Avogadro's law"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 49,
+    "subject": "Chemistry",
+    "question": "During the electrolysis of aqueous sodium chloride (brine), the gas liberated at the cathode is:",
+    "options": [
+      "Cl2",
+      "H2",
+      "O2",
+      "N2"
+    ],
+    "answer": "B"
+  },
+  {
     "id": 50,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 20. Select the correct option (answer is option D).",
+    "question": "The number of sigma bonds in an ethene (C2H4) molecule is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "4",
+      "5",
+      "6",
+      "3"
     ],
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 51,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 21. Select the correct option (answer is option C).",
+    "question": "Which type of isomerism is shown by 2-butene?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Optical isomerism",
+      "Metamerism",
+      "Geometrical isomerism",
+      "Functional isomerism"
     ],
     "answer": "C"
   },
   {
     "id": 52,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 22. Select the correct option (answer is option B).",
+    "question": "The catalyst used in the Haber process for the manufacture of ammonia is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Platinum",
+      "Vanadium pentoxide",
+      "Finely divided iron",
+      "Nickel"
     ],
-    "answer": "B"
+    "answer": "C"
   },
   {
     "id": 53,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 23. Select the correct option (answer is option A).",
+    "question": "Among the following hydrides, the one with the highest boiling point is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "H2O",
+      "H2S",
+      "H2Se",
+      "H2Te"
     ],
     "answer": "A"
   },
   {
     "id": 54,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 24. Select the correct option (answer is option D).",
+    "question": "The number of moles in 36 g of water (molar mass 18 g/mol) is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 55,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 25. Select the correct option (answer is option C).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 56,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 26. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 57,
-    "subject": "Chemistry",
-    "question": "Chemistry sample question 27. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "2",
+      "1",
+      "3",
+      "18"
     ],
     "answer": "A"
   },
   {
-    "id": 58,
+    "id": 55,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 28. Select the correct option (answer is option D).",
+    "question": "The colour of hydrated Cu^2+ ions in aqueous solution is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "Colourless",
+      "Green",
+      "Pink",
+      "Blue"
     ],
     "answer": "D"
   },
   {
+    "id": 56,
+    "subject": "Chemistry",
+    "question": "Which of the following is an alkali metal?",
+    "options": [
+      "Potassium",
+      "Calcium",
+      "Magnesium",
+      "Aluminium"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 57,
+    "subject": "Chemistry",
+    "question": "The main constituent of natural gas is:",
+    "options": [
+      "Ethane",
+      "Methane",
+      "Propane",
+      "Butane"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "subject": "Chemistry",
+    "question": "Tollens' reagent is:",
+    "options": [
+      "Ammoniacal silver nitrate",
+      "Alkaline copper sulphate",
+      "Acidified potassium dichromate",
+      "Neutral ferric chloride"
+    ],
+    "answer": "A"
+  },
+  {
     "id": 59,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 29. Select the correct option (answer is option C).",
+    "question": "The value of the universal gas constant R is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "83.14 J mol^-1 K^-1",
+      "1.987 J mol^-1 K^-1",
+      "0.8314 J mol^-1 K^-1",
+      "8.314 J mol^-1 K^-1"
     ],
-    "answer": "C"
+    "answer": "D"
   },
   {
     "id": 60,
     "subject": "Chemistry",
-    "question": "Chemistry sample question 30. Select the correct option (answer is option B).",
+    "question": "Which of the following is a Lewis acid?",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "BF3",
+      "NH3",
+      "H2O",
+      "OH^-"
     ],
-    "answer": "B"
+    "answer": "A"
   },
   {
     "id": 61,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 1. Select the correct option (answer is option B).",
+    "question": "The value of sin 30° + cos 60° is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1/2",
+      "0",
+      "√3",
+      "1"
     ],
-    "answer": "B"
+    "answer": "D"
   },
   {
     "id": 62,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 2. Select the correct option (answer is option A).",
+    "question": "The derivative of x^3 with respect to x is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "3x^2",
+      "x^2",
+      "3x",
+      "x^3/3"
     ],
     "answer": "A"
   },
   {
     "id": 63,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 3. Select the correct option (answer is option D).",
+    "question": "The value of the integral of 2x dx from x = 0 to x = 3 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "D"
-  },
-  {
-    "id": 64,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 4. Select the correct option (answer is option C).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "6",
+      "3",
+      "9",
+      "18"
     ],
     "answer": "C"
   },
   {
-    "id": 65,
+    "id": 64,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 5. Select the correct option (answer is option B).",
+    "question": "The sum of the roots of the equation x^2 - 5x + 6 = 0 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "6",
+      "5",
+      "-5",
+      "1"
     ],
     "answer": "B"
   },
   {
-    "id": 66,
+    "id": 65,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 6. Select the correct option (answer is option A).",
+    "question": "The determinant of the matrix [[1, 2], [3, 4]] is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 67,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 7. Select the correct option (answer is option D).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "2",
+      "10",
+      "-10",
+      "-2"
     ],
     "answer": "D"
   },
   {
+    "id": 66,
+    "subject": "Mathematics",
+    "question": "The distance between the points (0, 0) and (3, 4) is:",
+    "options": [
+      "7",
+      "1",
+      "5",
+      "25"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 67,
+    "subject": "Mathematics",
+    "question": "The value of log10(1000) is:",
+    "options": [
+      "10",
+      "100",
+      "3",
+      "1/3"
+    ],
+    "answer": "C"
+  },
+  {
     "id": 68,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 8. Select the correct option (answer is option C).",
+    "question": "The number of distinct arrangements of the letters of the word LEVEL is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "60",
+      "120",
+      "30",
+      "15"
     ],
     "answer": "C"
   },
   {
     "id": 69,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 9. Select the correct option (answer is option B).",
+    "question": "The value of 6C2 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "30",
+      "15",
+      "12",
+      "20"
     ],
     "answer": "B"
   },
   {
     "id": 70,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 10. Select the correct option (answer is option A).",
+    "question": "The sum of the first 10 natural numbers is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 71,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 11. Select the correct option (answer is option D).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "45",
+      "50",
+      "110",
+      "55"
     ],
     "answer": "D"
   },
   {
+    "id": 71,
+    "subject": "Mathematics",
+    "question": "The slope of the line 2x + 3y = 6 is:",
+    "options": [
+      "2/3",
+      "-2/3",
+      "-3/2",
+      "3/2"
+    ],
+    "answer": "B"
+  },
+  {
     "id": 72,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 12. Select the correct option (answer is option C).",
+    "question": "Two fair dice are thrown. The probability that the sum of the numbers is 7 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1/12",
+      "1/9",
+      "1/6",
+      "5/36"
     ],
     "answer": "C"
   },
   {
     "id": 73,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 13. Select the correct option (answer is option B).",
+    "question": "The value of lim (x→0) of (sin x)/x is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0",
+      "1",
+      "∞",
+      "Does not exist"
     ],
     "answer": "B"
   },
   {
     "id": 74,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 14. Select the correct option (answer is option A).",
+    "question": "The modulus of the complex number 3 + 4i is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "5",
+      "7",
+      "25",
+      "1"
     ],
     "answer": "A"
   },
   {
     "id": 75,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 15. Select the correct option (answer is option D).",
+    "question": "The value of i^10, where i = √-1, is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1",
+      "-1",
+      "i",
+      "-i"
     ],
-    "answer": "D"
+    "answer": "B"
   },
   {
     "id": 76,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 16. Select the correct option (answer is option C).",
+    "question": "The focus of the parabola y^2 = 8x is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 77,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 17. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 78,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 18. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "(2, 0)",
+      "(4, 0)",
+      "(0, 2)",
+      "(8, 0)"
     ],
     "answer": "A"
   },
   {
-    "id": 79,
+    "id": 77,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 19. Select the correct option (answer is option D).",
+    "question": "The dot product of the vectors (1, 2, 3) and (4, 5, 6) is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "32",
+      "21",
+      "15",
+      "28"
     ],
-    "answer": "D"
+    "answer": "A"
   },
   {
-    "id": 80,
+    "id": 78,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 20. Select the correct option (answer is option C).",
+    "question": "The area of a circle of radius 7 units (take π = 22/7) is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "44 sq. units",
+      "49 sq. units",
+      "154 sq. units",
+      "308 sq. units"
     ],
     "answer": "C"
   },
   {
-    "id": 81,
+    "id": 79,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 21. Select the correct option (answer is option B).",
+    "question": "The derivative of sin x with respect to x is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "-cos x",
+      "cos x",
+      "-sin x",
+      "tan x"
     ],
     "answer": "B"
   },
   {
+    "id": 80,
+    "subject": "Mathematics",
+    "question": "The sum of the infinite geometric series 1 + 1/2 + 1/4 + 1/8 + ... is:",
+    "options": [
+      "2",
+      "1",
+      "3/2",
+      "Infinity"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 81,
+    "subject": "Mathematics",
+    "question": "If A is a 2 × 3 matrix and B is a 3 × 4 matrix, the order of AB is:",
+    "options": [
+      "3 × 3",
+      "2 × 3",
+      "2 × 4",
+      "4 × 2"
+    ],
+    "answer": "C"
+  },
+  {
     "id": 82,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 22. Select the correct option (answer is option A).",
+    "question": "The integral of 1/x dx is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "ln|x| + C",
+      "-1/x^2 + C",
+      "e^x + C",
+      "1/x^2 + C"
     ],
     "answer": "A"
   },
   {
     "id": 83,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 23. Select the correct option (answer is option D).",
+    "question": "The value of 5!/3! is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "2",
+      "40",
+      "60",
+      "20"
     ],
     "answer": "D"
   },
   {
     "id": 84,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 24. Select the correct option (answer is option C).",
+    "question": "The equation of a circle with centre at the origin and radius 5 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "C"
-  },
-  {
-    "id": 85,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 25. Select the correct option (answer is option B).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "B"
-  },
-  {
-    "id": 86,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 26. Select the correct option (answer is option A).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "A"
-  },
-  {
-    "id": 87,
-    "subject": "Mathematics",
-    "question": "Mathematics sample question 27. Select the correct option (answer is option D).",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "x^2 + y^2 = 5",
+      "x^2 - y^2 = 25",
+      "x + y = 25",
+      "x^2 + y^2 = 25"
     ],
     "answer": "D"
   },
   {
-    "id": 88,
+    "id": 85,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 28. Select the correct option (answer is option C).",
+    "question": "The mean of the numbers 2, 4, 6, 8, 10 is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "6",
+      "5",
+      "8",
+      "30"
     ],
-    "answer": "C"
+    "answer": "A"
   },
   {
-    "id": 89,
+    "id": 86,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 29. Select the correct option (answer is option B).",
+    "question": "If f(x) = 2x + 3, then f(2) is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "5",
+      "7",
+      "4",
+      "10"
     ],
     "answer": "B"
   },
   {
-    "id": 90,
+    "id": 87,
     "subject": "Mathematics",
-    "question": "Mathematics sample question 30. Select the correct option (answer is option A).",
+    "question": "The sum of the interior angles of a hexagon is:",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "720°",
+      "540°",
+      "360°",
+      "900°"
     ],
     "answer": "A"
+  },
+  {
+    "id": 88,
+    "subject": "Mathematics",
+    "question": "The derivative of e^(2x) with respect to x is:",
+    "options": [
+      "e^(2x)",
+      "2e^(2x)",
+      "2e^x",
+      "e^(2x)/2"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 89,
+    "subject": "Mathematics",
+    "question": "The 10th term of the arithmetic progression 3, 5, 7, ... is:",
+    "options": [
+      "23",
+      "20",
+      "19",
+      "21"
+    ],
+    "answer": "D"
+  },
+  {
+    "id": 90,
+    "subject": "Mathematics",
+    "question": "The magnitude of the vector (2, 3, 6) is:",
+    "options": [
+      "11",
+      "5",
+      "49",
+      "7"
+    ],
+    "answer": "D"
   }
 ]
