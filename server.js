@@ -43,7 +43,7 @@ try {
 
   const [[old]] = await pool.query(
     "SELECT COUNT(*) AS n FROM information_schema.columns WHERE table_schema = ? AND table_name = 'users' AND column_name = 'password_hash'", [DB_NAME]);
-  if (old.n) throw Object.assign(new Error(`Database "${DB_NAME}" has the OLD table layout. Set a new DB_NAME in .env (e.g. jeeexam2) or drop the old tables 'attempts' and 'users'.`), { code: "OLD_SCHEMA" });
+  if (old.n) throw Object.assign(new Error(`Database "${DB_NAME}" has the OLD table layout. Set a new DB_NAME in .env (e.g. jeedata2) or drop the old tables 'attempts' and 'users'.`), { code: "OLD_SCHEMA" });
 
   await pool.query(`CREATE TABLE IF NOT EXISTS users (
     login_id VARCHAR(50) PRIMARY KEY,
